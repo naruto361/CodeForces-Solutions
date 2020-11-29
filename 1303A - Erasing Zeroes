@@ -1,0 +1,32 @@
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        string s;
+        cin>>s;
+        int ans=0;
+        int x=0,y=0;
+        for(int i=0;i<s.length();i++)
+        {
+            if(s[i]=='1') {x=i;break;}
+        }
+        for(int i=0;i<s.length();i++)
+        {
+            if(s[i]=='1') {y=i;}
+        }
+        for(int i=x+1;i<=y-1;i++)
+        {
+            if(s[i]=='0') ans++;
+        }
+
+        cout<<ans;
+        cout<<endl;
+    }
+}
