@@ -1,0 +1,19 @@
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int a,b,c;
+    cin>>a>>b>>c;
+    int k=0;
+    while(c>=0)
+    {
+        if(c%b==0) {k=1;break;}
+        c=c-a;
+    }
+    if(k) cout<<"Yes";
+    else cout<<"No";
+    
+}
