@@ -1,0 +1,15 @@
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    double a,b,c;
+    cin>>a>>b>>c;
+    double r1=(-b +sqrt(b*b - 4*a*c) )/(2*a);
+    double r2=(-b -sqrt(b*b - 4*a*c) )/(2*a);
+    if(r2>r1) swap(r1,r2);
+    cout<<setprecision(15)<<r1<<endl;
+    cout<<setprecision(15)<<r2<<endl;
+}
